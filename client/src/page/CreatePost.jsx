@@ -20,7 +20,7 @@ const CreatePost = () => {
 			try {
 				setgeneratingImg(true);
 				const response = await fetch(
-					"https://anoartroy-dall-e.onrender.com/api/v1/dalle",
+					'https://anoartroy-dall-e.onrender.com/api/v1/dalle',
 					{
 						method: "POST",
 						headers: {
@@ -51,7 +51,7 @@ const CreatePost = () => {
 
 			try {
 				const response = await fetch(
-					"https://anoartroy-dall-e.onrender.com/api/v1/post",
+					'https://anoartroy-dall-e.onrender.com/api/v1/post',
 					{
 						method: "POST",
 						headers: {
