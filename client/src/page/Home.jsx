@@ -23,12 +23,15 @@ const Home = () => {
 		setloading(true);
 
 		try {
-			const response = await fetch("https://anoartroy-dall-e.onrender.com", {
-				method: "GET",
-				headers: {
-					"Content-Type": "application/json",
-				},
-			});
+			const response = await fetch(
+				"https://anoartroy-dall-e.onrender.com/api/v1/post",
+				{
+					method: "GET",
+					headers: {
+						"Content-Type": "application/json",
+					},
+				}
+			);
 
 			if (response.ok) {
 				const result = await response.json();
