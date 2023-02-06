@@ -23,7 +23,7 @@ const Home = () => {
 		setloading(true);
 
 		try {
-			const response = await fetch("http://localhost:8080/api/v1/post", {
+			const response = await fetch("https://anoartroy-dall-e.onrender.com", {
 				method: "GET",
 				headers: {
 					"Content-Type": "application/json",
